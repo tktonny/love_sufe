@@ -50,6 +50,8 @@
             });
         });
     </script>
+    <!--查询-->
+    <script src="js/look_up.js"></script>
 </head>
 
 <body>
@@ -63,7 +65,7 @@
     </header>
 
     <div class="container">
-        <div class="hidden-xs col-md-6">
+        <div class="hidden-xs col-md-6" id="left">
             <div style=" margin-top: 25%;padding: 40px;border-radius: 5px;">
                 <div class="logo-title">
                     <h1 style="color: rgb(255, 0, 76);">脱贫又脱单</h1>
@@ -80,7 +82,7 @@
                                 <input type="text" name="email" id="email" class="form-control" placeholder="邮箱" />
                             </div>
                         </div>
-                        <div class="row parlex-back">
+                        <div style="margin-top: -50px;" class="row parlex-back">
                             <div class="col-md-12">
                                 <textarea name="comments" id="comments" cols="30" rows="10" class="form-control" placeholder="您的留言"></textarea>
                             </div>
@@ -96,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 admin_login" style=" margin-top: 25%;">
+        <div class="col-md-6 admin_login" id="right" style=" margin-top: 25%;">
             <div>
                 <form>
                     <h1 style="color:cornsilk; text-align: center;">请输入查询条件</h1>
