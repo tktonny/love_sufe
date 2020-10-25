@@ -93,9 +93,6 @@ function initdata() {
                         '            <div style="background: rgba(0, 0, 0, 0.3);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">' +
                         Data[i].wechat_2 +
                         '            </div>\n' +
-                        '            <div class="item-footer">\n' +
-                        '                <span class="text-muted"><i class="icon-comments news-source"></i> ' + news[i].infoSource + '</span> &nbsp; <span class="text-muted news-time">' + timestampToTime(news[i].pubDate) + '</span>\n' +
-                        '            </div>\n' +
                         '        </div>';
                     $(".vanish").html(html);
                     return;
