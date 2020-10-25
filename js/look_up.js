@@ -79,9 +79,25 @@ function initdata() {
                 //console.log(Data[i].id);
                 //console.log(Data[i].name);
                 if (user_id == Data[i].id && user_name == Data[i].name) {
-                    var parent = document.getElementById("right");
-                    var child = document.getElementById("vanish");
-                    parent.removeChild(child);
+                    var html = "";
+                    html += '<div class="item">\n' +
+                        '            <h1 style="color:#ebedf4; text-align: center;">CP匹配结果</h1><br>\n' +
+                        '            <div style="height: 20px;"></div>\n' +
+                        '            <div style="background: rgba(0, 0, 0, 0.5);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">' +
+                        Data[i].id +
+                        '            </div>\n' +
+                        '            <div style="height: 20px;"></div>\n' +
+                        '            <div style="background: rgba(0, 0, 0, 0.4);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">' +
+                        Data[i].name +
+                        '            </div>\n' +
+                        '            <div style="background: rgba(0, 0, 0, 0.3);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">' +
+                        Data[i].wechat_2 +
+                        '            </div>\n' +
+                        '            <div class="item-footer">\n' +
+                        '                <span class="text-muted"><i class="icon-comments news-source"></i> ' + news[i].infoSource + '</span> &nbsp; <span class="text-muted news-time">' + timestampToTime(news[i].pubDate) + '</span>\n' +
+                        '            </div>\n' +
+                        '        </div>';
+                    $(".vanish").html(html);
                     return;
                 }
             }
