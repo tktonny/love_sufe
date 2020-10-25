@@ -5,7 +5,7 @@ var w = window.innerWidth;
 function initdata() {
     var user_id = document.getElementById('id_right').value;
     var user_name = document.getElementById('name_right').value;
-    console.log(user_id);
+
     $.ajax({
         url: dataUrl,
         type: 'get',
@@ -68,9 +68,12 @@ function initdata() {
                 });
             }
             //验证身份
-
+            console.log(user_id);
+            console.log(user_name);
 
             for (var i in Data) {
+                console.log(Data[i].id);
+                console.log(Data[i].name);
                 if (user_id == Data[i].id && user_name == Data[i].name) {
                     var parent = document.getElementById("right");
                     var child = document.getElementById("vanish");
