@@ -51,12 +51,13 @@ function initdata() {
                 var att4 = Data[i].att4;
                 var att5 = Data[i].att5;
                 var att6 = Data[i].att6;
-                datalist1[id].push({
+                datalist1.push({
                     id: id,
                     name: name,
                     wechat: wechat_2
                 });
-                datalist2[id].push({
+                datalist2.push({
+                    id: id,
                     wechat: wechat_2,
                     att1: att1,
                     att2: att2,
