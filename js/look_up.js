@@ -89,11 +89,11 @@ function initdata() {
                         '            <div style="color:#fff;background: rgba(0, 0, 0, 0.5);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">您的学号：' +
                         Data[i].id +
                         '            </div>\n' +
-                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.4);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;您的姓名">' +
+                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.4);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">您的姓名：' +
                         Data[i].name +
                         '            </div>\n' +
                         '            <div style="height: 20px;"></div>\n' +
-                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.3);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;匹配到的微信号">' +
+                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.3);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;"匹配到的微信号：>' +
                         Data[i].wechat_2 +
                         '            </div>\n' +
                         '        </div>';
