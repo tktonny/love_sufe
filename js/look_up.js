@@ -3,10 +3,10 @@ var dataUrlBackup = "/love_sufe/data/7dayscp_2020_11.csv";
 var w = window.innerWidth;
 
 function initdata() {
-    var user_id = document.getElementById('id');
-    var user_name = document.getElementById('name');
+    var user_id = document.getElementById('id_right');
+    var user_name = document.getElementById('name_right');
     console.log(user_id.values);
-    console.log(user_id.value);
+    console.log(user_id.values);
     $.ajax({
         url: dataUrl,
         type: 'get',
@@ -71,7 +71,7 @@ function initdata() {
 
 
             for (var i in Data) {
-                if (user_id.value == Data[i].id && user_name.value == Data[i].name) {
+                if (user_id == Data[i].id && user_name == Data[i].name) {
                     var parent = document.getElementById("right");
                     var child = document.getElementById("vanish");
                     parent.removeChild(child);
