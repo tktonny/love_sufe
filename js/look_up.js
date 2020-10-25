@@ -42,6 +42,8 @@ function initdata() {
             }
 
             for (var i in Data) {
+                datalist1[id] = [];
+                datalist2[id] = [];
                 var id = Data[i].id;
                 var name = Data[i].name;
                 var wechat_2 = Data[i].wechat_2;
@@ -51,13 +53,11 @@ function initdata() {
                 var att4 = Data[i].att4;
                 var att5 = Data[i].att5;
                 var att6 = Data[i].att6;
-                datalist1.push({
-                    id: id,
+                datalist1[id].push({
                     name: name,
                     wechat: wechat_2
                 });
-                datalist2.push({
-                    id: id,
+                datalist2[id].push({
                     wechat: wechat_2,
                     att1: att1,
                     att2: att2,
