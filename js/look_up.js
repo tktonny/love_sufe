@@ -92,11 +92,12 @@ function initdata() {
                         '            <div style="color:#fff;background: rgba(0, 0, 0, 0.4);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">您的姓名：' +
                         Data[i].name +
                         '            </div>\n' +
-                        '            <div style="height: 10px;">匹配到的微信号：</div>\n' +
+                        '            <div style="height: 10px;"></div>\n' +
                         '            <div style="color:#fff;height: 20px;">匹配到的微信号：</div>\n' +
                         '            <div style="color:#fff;background: rgba(0, 0, 0, 0.3);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">' +
                         Data[i].wechat_2 +
                         '            </div>\n' +
+                        '            <div style="height: 30px;"></div>\n' +
                         '        </div>';
 
                     v.innerHTML = html;
