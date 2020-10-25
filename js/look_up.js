@@ -5,7 +5,7 @@ var w = window.innerWidth;
 function initdata() {
     var user_id = document.getElementById('id_right');
     var user_name = document.getElementById('name_right');
-    console.log(user_id.values);
+    console.log(user_id.value);
     $.ajax({
         url: dataUrl,
         type: 'get',
