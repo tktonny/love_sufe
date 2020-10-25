@@ -3,9 +3,9 @@ var dataUrlBackup = "/love_sufe/data/7dayscp_2020_11.csv";
 var w = window.innerWidth;
 
 function initdata() {
-    var user_id = document.getElementById('id_right');
-    var user_name = document.getElementById('name_right');
-    console.log(user_id.value);
+    var user_id = document.getElementById('id_right').value;
+    var user_name = document.getElementById('name_right').value;
+    console.log(user_id);
     $.ajax({
         url: dataUrl,
         type: 'get',
