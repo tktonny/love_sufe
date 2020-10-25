@@ -94,7 +94,7 @@ function initdata() {
                         Data[i].wechat_2 +
                         '            </div>\n' +
                         '        </div>';
-                    document.getElementById(vanish).innerHTML = html;
+                    document.getElementById('vanish').innerHTML = html;
                     return;
                 }
             }
