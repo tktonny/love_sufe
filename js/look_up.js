@@ -10,7 +10,7 @@ function initdata() {
     var user_id = document.getElementById('id_right').value;
     var user_name = document.getElementById('name_right').value;
     var v = document.getElementById('vanish');
-    console.log(v)
+    //console.log(v)
     $.ajax({
         url: dataUrl,
         type: 'get',
@@ -96,7 +96,7 @@ function initdata() {
                         '            </div>\n' +
                         '        </div>';
 
-                    //document.getElementById('vanish').innerHTML = html;
+                    v.innerHTML = html;
                     return;
                 }
             }
