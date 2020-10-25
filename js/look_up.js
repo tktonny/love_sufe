@@ -15,12 +15,12 @@ function initdata() {
             var datalist2 = [];
             var Data = [];
             var relArr = chartData.split("\n");
-            console.log(relArr);
+            //console.log(relArr);
             if (!$.isEmptyObject(relArr) && relArr.length > 1) {
                 for (var key = 1, len = relArr.length; key < len; key++) {
                     var values = relArr[key];
                     if (!$.isEmptyObject(values)) {
-                        console.log(values);
+                        //console.log(values);
                         var obj = {};
                         var objArr = values.split(",");
                         obj["id"] = objArr[0]
@@ -52,9 +52,12 @@ function initdata() {
                 var att5 = Data[i].att5;
                 var att6 = Data[i].att6;
                 datalist1[id].push({
+                    id: id,
+                    name: name,
                     wechat: wechat_2
                 });
                 datalist2[id].push({
+                    wechat: wechat_2,
                     att1: att1,
                     att2: att2,
                     att3: att3,
