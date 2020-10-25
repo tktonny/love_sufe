@@ -3,6 +3,9 @@ var dataUrlBackup = "/love_sufe/data/7dayscp_2020_11.csv";
 var w = window.innerWidth;
 
 function initdata() {
+    var user_id = document.getElementById('id').value;
+    var user_name = document.getElementById('name').value;
+    console.log(user_id);
     $.ajax({
         url: dataUrl,
         type: 'get',
@@ -61,8 +64,7 @@ function initdata() {
                 });
             }
             //验证身份
-            var user_id = document.getElementById('id').value;
-            var user_name = document.getElementById('name').value;
+
 
             for (var i in Data) {
                 if (user_id == Data[i].id && user_name == Data[i].name) {
