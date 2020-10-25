@@ -5,8 +5,9 @@
     overflow: hidden;
     margin: 20% auto 100px auto;
     padding: 40px;
-    box-shadow: 0 -15px 30px #fff;
+    box-shadow: 0 -15px 30px #7a023c;
     border-radius: 5px;
+    background: linear-gradient(to right, #FF5983, #c1194e);
 }
 
 .admin_login dd {
@@ -25,7 +26,7 @@
     text-indent: 2em;
     border: none;
     background: #5cbdaa;
-    color: white;
+    color: red;
 }
 
 .admin_login dd .login_txtbx::-webkit-input-placeholder {
@@ -262,7 +263,7 @@
 }
 
 body {
-    background: #1e1e1e;
+    background: #ebedf4;
 }
 
 canvas {

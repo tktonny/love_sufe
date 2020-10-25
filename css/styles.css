@@ -22,17 +22,17 @@ body {
 }
 
 ::selection {
-    color: #fff;
-    background: #F6464A;
+    color: #F6464A;
+    background: #fff;
 }
 
 ::-moz-selection {
-    color: #fff;
-    background: #F6464A;
+    color: #F6464A;
+    background: #fff;
 }
 
 p {
-    color: #858585;
+    color: #F6464A;
     margin: 0 0 1em !important;
 }
 
@@ -1289,13 +1289,13 @@ footer {
 }
 
 .parlex-back {
-    padding: 30px 0;
-    background-color: rgba(0, 0, 0, 0.37);
-    color: #FDFDFD !important;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000 !important;
 }
 
 .parlex-back .heading p {
-    color: #FDFDFD;
+    color: #ff0000;
 }
 
 #clients {

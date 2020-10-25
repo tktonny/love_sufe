@@ -187,7 +187,7 @@ object {
 
 input,
 textarea {
-    color: #fff !important
+    color: #ededed !important
 }
 
 html,
@@ -2880,8 +2880,8 @@ video:before {
 .contact-form textarea.form-control {
     width: 100%;
     display: block;
-    background: transparent;
-    border: 1px solid #fff;
+    background: rgba(0, 0, 0, .12);
+    border: 1px solid #ff5983;
     height: 50px;
     border-radius: 0px;
 }
