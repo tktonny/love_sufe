@@ -49,6 +49,7 @@ function initdata() {
             for (var i in Data) {
                 var id = Data[i].id;
                 var name = Data[i].name;
+                var cp_id = Data[i].cp_id;
                 var wechat_2 = Data[i].wechat_2;
                 var att1 = Data[i].att1;
                 var att2 = Data[i].att2;
@@ -60,6 +61,7 @@ function initdata() {
                 datalist2[id] = [];
                 datalist1[id].push({
                     name: name,
+                    cp_id: cp_id,
                     wechat: wechat_2
                 });
                 datalist2[id].push({
@@ -84,14 +86,14 @@ function initdata() {
                     html += '<div class="item">\n' +
                         '            <h1 style="color:#ebedf4; text-align: center;">CP匹配结果</h1><br>\n' +
                         '            <div style="height: 20px;"></div>\n' +
-                        '            <div style="background: rgba(0, 0, 0, 0.5);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">' +
+                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.5);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">您的学号：' +
                         Data[i].id +
                         '            </div>\n' +
-                        '            <div style="height: 20px;"></div>\n' +
-                        '            <div style="background: rgba(0, 0, 0, 0.4);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">' +
+                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.4);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;您的姓名">' +
                         Data[i].name +
                         '            </div>\n' +
-                        '            <div style="background: rgba(0, 0, 0, 0.3);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">' +
+                        '            <div style="height: 20px;"></div>\n' +
+                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.3);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;匹配到的微信号">' +
                         Data[i].wechat_2 +
                         '            </div>\n' +
                         '        </div>';
