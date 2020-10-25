@@ -76,8 +76,8 @@ function initdata() {
             console.log(user_name);
 
             for (var i in Data) {
-                console.log(Data[i].id);
-                console.log(Data[i].name);
+                //console.log(Data[i].id);
+                //console.log(Data[i].name);
                 if (user_id == Data[i].id && user_name == Data[i].name) {
                     var parent = document.getElementById("right");
                     var child = document.getElementById("vanish");
