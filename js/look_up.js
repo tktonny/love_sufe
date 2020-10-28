@@ -8,7 +8,7 @@ function warning() {
 
 function initdata() {
     var user_id = document.getElementById('id_right').value;
-    var user_name = document.getElementById('name_right').value;
+    var user_wechat = document.getElementById('name_right').value;
     var v = document.getElementById('vanish');
     //console.log(v)
     $.ajax({
@@ -81,18 +81,18 @@ function initdata() {
             for (var i in Data) {
                 //console.log(Data[i].id);
                 //console.log(Data[i].name);
-                if (user_id == Data[i].id && user_name == Data[i].name) {
+                if (user_id == Data[i].id && user_wechat == Data[i].wechat_1) {
                     var html = "";
                     html += '<div class="item">\n' +
                         '            <h1 style="color:#ebedf4; text-align: center;">CP匹配结果</h1><br>\n' +
                         '            <div style="height: 20px;"></div>\n' +
-                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.5);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">您的学号：' +
-                        Data[i].id +
-                        '            </div>\n' +
-                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.4);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">您的姓名：' +
+                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.5);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">您的姓名：' +
                         Data[i].name +
                         '            </div>\n' +
                         '            <div style="height: 10px;"></div>\n' +
+                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.4);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">CP ID：' +
+                        Data[i].cp_id +
+                        '            </div>\n' +
                         '            <div style="color:#fff;height: 20px;">匹配到的微信号：</div>\n' +
                         '            <div style="color:#fff;background: rgba(0, 0, 0, 0.3);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">' +
                         Data[i].wechat_2 +
@@ -104,7 +104,7 @@ function initdata() {
                     return;
                 }
             }
-            alert("学号姓名有误");
+            alert("学号微信号有误");
             return;
         },
         error: function(res) {
