@@ -74,13 +74,12 @@ function initdata() {
                     att6: att6,
                 });
             }
-            //验证身份
-            console.log(user_id);
-            console.log(user_name);
+
 
             for (var i in Data) {
                 //console.log(Data[i].id);
                 //console.log(Data[i].name);
+                //验证身份
                 if (user_id == Data[i].id && user_wechat == Data[i].wechat_1) {
                     var html = "";
                     html += '<div class="item">\n' +
