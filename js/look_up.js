@@ -89,7 +89,7 @@ function initdata() {
                         Data[i].name +
                         '            </div>\n' +
                         '            <div style="height: 10px;"></div>\n' +
-                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.4);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">CP ID：' +
+                        '            <div style="color:#fff;background: rgba(0, 0, 0, 0.4);border: none;padding: 12px 15px;margin: 8px 0;width: 100%;outline: none;">您的组号：' +
                         Data[i].cp_id +
                         '            </div>\n' +
                         '            <div style="color:#fff;height: 20px;">匹配到的微信号：</div>\n' +
