@@ -85,7 +85,8 @@ function initdata() {
                     var html1 = "";
                     var html2 = "";
 
-                    html1 += '<div class="index_card__3l_i4 index_displayCard__1-3Kb"><div class="index_displayCardTitle__L0l1S"><div class="index_icon__1hNLE index_role__17H9U index_displayCardTitleIcon__1uvxd"></div>' +
+                    html1 += '<div class="index_card__3l_i4 index_displayCard__1-3Kb"><div class="index_displayCardTitle__L0l1S">' +
+                        '<a href="#"><i class="fa fa-heartbeat"></i></a>' +
                         '匹配信息</div><div class="index_displayCardContent__3J3lN"><div class="Item_formItem__1u0yT"><div class="Item_formItemLabel__21cKJ">' +
                         '您的组号</div><div class="Item_formItemContent__ByW4i"><div class="index_formInputGroupContent__1ERpf"><div class="index_formInputGroupInputWrapper__3icys"><div class="index_inputWrapper__Du7MC index_default__3LVnT">' +
                         '<input type="text" class="index_input__JggqB" value="' + Data[i].cp_id + '" readonly="" style="text-align:start" autocomplete="on"></div></div></div></div>' +
