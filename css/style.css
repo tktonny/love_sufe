@@ -187,7 +187,7 @@ object {
 
 input,
 textarea {
-    color: #ededed !important
+    color: gray !important
 }
 
 html,
