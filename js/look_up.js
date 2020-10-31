@@ -97,7 +97,7 @@ function initdata() {
                         '<div class="Item_formItemErrorMessage__1fmbI"></div></div></div></div>';
                     html2 += '<div class="Item_formItemLabel__21cKJ">' +
                         '匹配信息</div><div class="Item_formItemContent__ByW4i"><div class="index_formInputGroupContent__1ERpf"><div class="index_formInputGroupInputWrapper__3icys"><div class="index_inputWrapper__Du7MC index_default__3LVnT">' +
-                        '<input type="text" class="index_input__JggqB" value="由于' + Data[i].wechat_2 + '，' + '" readonly="" style="text-align:start" autocomplete="on">' +
+                        '<input type="text" class="index_input__JggqB" value="由于' + Data[i].wechat_2 + '，' + '" readonly="" style="text-align:start" autocomplete="on"></div><div class="index_inputWrapper__Du7MC index_default__3LVnT">' +
                         '<input type="text" class="index_input__JggqB" value="' + '很抱歉' + Data[i].cp_id + '。' + '" readonly="" style="text-align:start" autocomplete="on">' + '</div></div></div></div>' +
                         '<div class="Item_formItemErrorMessage__1fmbI"></div></div><div class="Item_formItem__1u0yT">';
                     if (Data[i].cp_id == "本期暂无配对") {
