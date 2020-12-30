@@ -1,5 +1,5 @@
-var dataUrl = "/love_sufe/data/7dayscp_2020_12.csv";
-var dataUrlBackup = "/love_sufe/data/7dayscp_2020_12.csv";
+var dataUrl = "/love_sufe/data/7dayscp_2020_sp.csv";
+var dataUrlBackup = "/love_sufe/data/7dayscp_2020_sp.csv";
 var w = window.innerWidth;
 
 function warning() {
@@ -29,17 +29,18 @@ function initdata() {
                         //console.log(values);
                         var obj = {};
                         var objArr = values.split(",");
-                        obj["id"] = objArr[0]
-                        obj["name"] = objArr[1];
-                        obj["wechat_1"] = objArr[2];
-                        obj["cp_id"] = objArr[3];
-                        obj["wechat_2"] = objArr[4];
-                        obj["att1"] = objArr[5];
-                        obj["att2"] = objArr[6];
-                        obj["att3"] = objArr[7];
-                        obj["att4"] = objArr[8];
-                        obj["att5"] = objArr[9];
-                        obj["att6"] = objArr[10];
+                        obj["id"] = objArr[0];
+                        //obj["name"] = objArr[1];
+                        obj["wechat_1"] = objArr[1];
+                        //obj["cp_id"] = objArr[3];
+                        obj["own_id"] = objArr[2];
+                        obj["wechat_2"] = objArr[3];
+                        //obj["att1"] = objArr[5];
+                        //obj["att2"] = objArr[6];
+                        //obj["att3"] = objArr[7];
+                        //obj["att4"] = objArr[8];
+                        //obj["att5"] = objArr[9];
+                        //obj["att6"] = objArr[10];
                         if (!$.isEmptyObject(objArr)) {
                             Data.push(obj);
                         }
@@ -49,20 +50,22 @@ function initdata() {
 
             for (var i in Data) {
                 var id = Data[i].id;
-                var name = Data[i].name;
-                var cp_id = Data[i].cp_id;
+                //var name = Data[i].name;
+                //var cp_id = Data[i].cp_id;
+                var wechat_1 = Data[i].wechat_1;
+                var own_id = Data[i].own_id;
                 var wechat_2 = Data[i].wechat_2;
-                var att1 = Data[i].att1;
-                var att2 = Data[i].att2;
-                var att3 = Data[i].att3;
-                var att4 = Data[i].att4;
-                var att5 = Data[i].att5;
-                var att6 = Data[i].att6;
+                //var att1 = Data[i].att1;
+                //var att2 = Data[i].att2;
+                //var att3 = Data[i].att3;
+                //var att4 = Data[i].att4;
+                //var att5 = Data[i].att5;
+                //var att6 = Data[i].att6;
                 datalist1[id] = [];
                 datalist2[id] = [];
                 datalist1[id].push({
-                    name: name,
-                    cp_id: cp_id,
+                    //name: name,
+                    //cp_id: cp_id,
                     wechat: wechat_2
                 });
                 datalist2[id].push({
@@ -88,8 +91,8 @@ function initdata() {
                     html1 += '<div class="index_card__3l_i4 index_displayCard__1-3Kb"><div class="index_displayCardTitle__L0l1S">' +
                         '<a href="#"><i class="fa fa-heartbeat"></i></a>' +
                         '匹配信息</div><div class="index_displayCardContent__3J3lN"><div class="Item_formItem__1u0yT"><div class="Item_formItemLabel__21cKJ">' +
-                        '您的组号</div><div class="Item_formItemContent__ByW4i"><div class="index_formInputGroupContent__1ERpf"><div class="index_formInputGroupInputWrapper__3icys"><div class="index_inputWrapper__Du7MC index_default__3LVnT">' +
-                        '<input type="text" class="index_input__JggqB" value="' + Data[i].cp_id + '" readonly="" style="text-align:start" autocomplete="on"></div></div></div></div>' +
+                        '您的号码</div><div class="Item_formItemContent__ByW4i"><div class="index_formInputGroupContent__1ERpf"><div class="index_formInputGroupInputWrapper__3icys"><div class="index_inputWrapper__Du7MC index_default__3LVnT">' +
+                        '<input type="text" class="index_input__JggqB" value="' + Data[i].own_id + '" readonly="" style="text-align:start" autocomplete="on"></div></div></div></div>' +
                         '<div class="Item_formItemErrorMessage__1fmbI"></div></div><div class="Item_formItem__1u0yT"><div class="Item_formItemLabel__21cKJ">' +
                         '匹配到的微信号</div><div class="Item_formItemContent__ByW4i"><div class="index_formInputGroupContent__1ERpf"><div class="index_formInputGroupInputWrapper__3icys">' +
                         '<div class="index_inputWrapper__Du7MC index_default__3LVnT">' +
