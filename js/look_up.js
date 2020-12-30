@@ -66,16 +66,17 @@ function initdata() {
                 datalist1[id].push({
                     //name: name,
                     //cp_id: cp_id,
-                    wechat: wechat_2
+                    wechat: wechat_1,
+
                 });
                 datalist2[id].push({
                     wechat: wechat_2,
-                    att1: att1,
-                    att2: att2,
-                    att3: att3,
-                    att4: att4,
-                    att5: att5,
-                    att6: att6,
+                    //att1: att1,
+                    //att2: att2,
+                    //att3: att3,
+                    //att4: att4,
+                    //att5: att5,
+                    //att6: att6,
                 });
             }
 
