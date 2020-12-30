@@ -88,6 +88,7 @@ function initdata() {
                 if (user_id == Data[i].id && user_wechat == Data[i].wechat_1) {
                     var html1 = "";
                     var html2 = "";
+                    var html3 = "";
 
                     html1 += '<div class="index_card__3l_i4 index_displayCard__1-3Kb"><div class="index_displayCardTitle__L0l1S">' +
                         '<a href="#"><i class="fa fa-heartbeat"></i></a>' +
@@ -101,11 +102,20 @@ function initdata() {
                         '<div class="Item_formItemErrorMessage__1fmbI"></div></div></div></div>';
                     html2 += '<div class="Item_formItemLabel__21cKJ">' +
                         '匹配信息</div><div class="Item_formItemContent__ByW4i"><div class="index_formInputGroupContent__1ERpf"><div class="index_formInputGroupInputWrapper__3icys"><div class="index_inputWrapper__Du7MC index_default__3LVnT">' +
-                        '<input type="text" class="index_input__JggqB" value="由于' + Data[i].wechat_2 + '，' + '" readonly="" style="text-align:start" autocomplete="on"></div><div class="index_inputWrapper__Du7MC index_default__3LVnT">' +
                         '<input type="text" class="index_input__JggqB" value="' + '很抱歉' + Data[i].cp_id + '。' + '" readonly="" style="text-align:start" autocomplete="on">' + '</div></div></div></div>' +
                         '<div class="Item_formItemErrorMessage__1fmbI"></div></div><div class="Item_formItem__1u0yT">';
-                    if (Data[i].cp_id == "本期暂无配对") {
+                    html3 += '<div class="index_card__3l_i4 index_displayCard__1-3Kb"><div class="index_displayCardTitle__L0l1S">' +
+                        '<a href="#"><i class="fa fa-heartbeat"></i></a>' +
+                        '匹配信息</div><div class="index_displayCardContent__3J3lN"><div class="Item_formItem__1u0yT"><div class="Item_formItemLabel__21cKJ">' +
+                        '您的号码</div><div class="Item_formItemContent__ByW4i"><div class="index_formInputGroupContent__1ERpf"><div class="index_formInputGroupInputWrapper__3icys"><div class="index_inputWrapper__Du7MC index_default__3LVnT">' +
+                        '<input type="text" class="index_input__JggqB" value="' + Data[i].own_id + '" readonly="" style="text-align:start" autocomplete="on"></div></div></div></div>' +
+                        '<div class="Item_formItemErrorMessage__1fmbI"></div></div><div class="Item_formItem__1u0yT"><div class="Item_formItemLabel__21cKJ">' +
+                        '匹配到的微信号</div><div class="Item_formItemContent__ByW4i"><div class="index_formInputGroupContent__1ERpf"><div class="index_formInputGroupInputWrapper__3icys">' +
+                        '</div></div></div>' +
+                        '<div class="Item_formItemErrorMessage__1fmbI"></div></div></div></div>';
+                    if (Data[i].wechat_2 == "您本轮暂未获得匹配，请等待第2，3轮的匹配") {
                         v.innerHTML = html2;
+                        l.innerHTML = html3;
                     } else {
                         l.innerHTML = html1;
                         v.innerHTML = '';
