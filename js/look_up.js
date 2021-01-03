@@ -1,5 +1,5 @@
-var dataUrl = "/love_sufe/data/7dayscp_2020_sp_2.csv";
-var dataUrlBackup = "/love_sufe/data/7dayscp_2020_sp_2.csv";
+var dataUrl = "/love_sufe/data/7dayscp_2020_sp_3.csv";
+var dataUrlBackup = "/love_sufe/data/7dayscp_2020_sp_3.csv";
 var w = window.innerWidth;
 
 function warning() {
